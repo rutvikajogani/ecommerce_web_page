@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filpkart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <div class="search_section">
+            <input id="input" type="text" placeholder="Search" class="text" >
+            <i id="close" onclick="searchbar()" class="fa-solid fa-magnifying-glass"></i>
+          
+
+        </div>
+    </header>
+
+
+
+    <section class="first_section">
+        <div class="first_info_1">
+            <h1>filter</h1>
+            <div class="line"></div>
+            <div class="categories">
+                <h3>Category</h3>
+                <span> < category & jewelery </span>
+                <div class="line"></div>
+            </div>
+            <div class="price">
+                <h3>price</h3>
+                <input type="range"  onchange="pricechange()"   class="range" min="10" max="1000">
+                <div class="line"></div>
+            </div>
+            <div class="rates">
+                <h3>rate</h3>
+                <div><input type="checkbox"  onchange="run(4)"  id="4">4★ & above 
+                </div> 
+               <div><input type="checkbox" onchange="run(3)"  id="3" >3★ & above 
+               </div> 
+               
+            </div>
+        </div>
+        <div class="first_info_2" id="list">
+            <!-- <div class="first_info_2_1">
+                <img src="./img.webp" alt="" class="nature_img">
+                <div class="descriptions">
+                    <h3>Xiaomi 14 CIVI (Cruise Blue, 512 GB)</h3>
+                    <div class="ratings">
+                        <div class="rate">4.5<i class="fa-solid fa-star star"></i></div>
+                        <p>707 ratings & 62 Reviews</p>
+                    </div>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ea
+                        voluptatum nam enim natus consequuntur distinctio. Magni hic corporis, excepturi amet nisi,
+                        officiis aut eveniet nostrum eum adipisci vero harum!</p>
+
+                </div>
+                <div class="price">
+                    <h4>₹47,999</h4>
+                    <div class="price_1">
+                        <p class="price_1_1">₹59,999</p>
+                        <span>20% off</span>
+                    </div>
+                    <h5>free delivery</h5>
+                    <h6>Save extra with combo offers</h6>
+                    <h5>Upto ₹35,150 off on Exchange</h5>
+                </div>
+            </div> -->
+        </div>
+    
+    </section>
+    
+    <script src="./scrip.js"></script>
+</body>
+
+</html>
